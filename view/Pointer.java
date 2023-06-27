@@ -1,5 +1,7 @@
 package view;
 
+
+// class này lấy địa chỉ của ORDER được tạo ở Home
 public class Pointer {
 
     public static Order currentOrder;
@@ -15,8 +17,8 @@ public class Pointer {
     public static Order setCurrentOrder(Order order) {
         return Order.setCurrentOrder(order) ;
     }
-    public static Pay setCurrentPay(Pay pay) {
-        return Pay.setCurrentPay(pay);
-    }
+//    public static Pay setCurrentPay(Pay pay) {
+//        return Pay.setCurrentPay(pay);
+//    }
 
 }

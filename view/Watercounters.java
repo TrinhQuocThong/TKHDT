@@ -34,13 +34,13 @@ public class Watercounters extends JFrame {
         this.tableData = tableData;
     }
 
-
-    // hàm khởi tạo giá trị cho list
-    public void createRm() {
-        for (int i = 1; i <= 30; i++) {
-
-        }
-    }
+//
+//    // hàm khởi tạo giá trị cho list
+//    public void createRm() {
+//        for (int i = 1; i <= 30; i++) {
+//
+//        }
+//    }
 
     private void createAndShowGUI(List<Object[]> tableData) {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,21 +61,19 @@ public class Watercounters extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Đã tạo thành công Remote số : " );
 
-                //sau khi cấp số thf xóa nó
-                //trả thì cộng lại
 
             }
         });
 
         returnRemoteButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Remote returned");
+                JOptionPane.showMessageDialog(null, "---------");
             }
         });
 
         notificationButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Notification");
+                JOptionPane.showMessageDialog(null, "----------");
             }
         });
 

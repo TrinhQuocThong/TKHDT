@@ -16,7 +16,7 @@ public class Pay extends JFrame {
     private JRadioButton cashPayment, cardPayment, onlinePayment;
     private JLabel cashDiscountLabel, cardDiscountLabel, onlineDiscountLabel;  // label để hiển thị mã giảm giá
 
-    private String resultRandom; //biến lưu giá trị random để không phải gọi lại hàm đã random
+    private String resultRandom; //bến lưu giá trị random để không phải gọi lại hàm đã random
     private JButton payButton, backButton;
     private JLabel totalLabel;
     private JTextField discountCodeField;
@@ -31,7 +31,7 @@ public class Pay extends JFrame {
 
 
 
-    public static Pay currentPay; // biến này không
+    public static Pay currentPay;
 
     public static Pay setCurrentPay(Pay pay) {
         return currentPay = pay;
@@ -306,7 +306,7 @@ public class Pay extends JFrame {
     }
 
 
-    // ham lấy dữ liệu bảng Pay sang Waterscounter
+    // hàm lấy dữ liệu bảng Pay sang Waterscounter
     public List<Object[]> getPaymentTableData() {
         List<Object[]> tableData = new ArrayList<>();
         DefaultTableModel tableModel = (DefaultTableModel) drinksTable.getModel();
